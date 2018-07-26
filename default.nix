@@ -230,7 +230,7 @@ in
             '')
             workspaceDependenciesTransitive);
     in stdenv.mkDerivation (builtins.removeAttrs attrs ["pkgConfig" "workspaceDependencies"] // {
-      inherit src;
+      inherit src version;
 
       name = baseName;
 
